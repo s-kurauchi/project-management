@@ -1,100 +1,64 @@
-# Welcome to React Router!
+# Project Management Application
 
-A modern, production-ready template for building full-stack React applications using React Router.
+シンプルで使いやすいプロジェクト管理アプリケーションです。
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## 機能
 
-## Features
+- 📋 プロジェクト一覧の表示・管理
+- ✅ タスクの作成・編集・削除
+- 👥 チームメンバーの管理
+- 📊 プロジェクトの進捗管理
+- 🔒 TypeScript 採用による型安全性
+- 🎨 モダンな UI デザイン
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## 技術スタック
 
-## Getting Started
+- React + TypeScript
+- React Router
+- Material UI (MUI)
+- Vite
 
-### Installation
+## 開発環境のセットアップ
 
-Install the dependencies:
+### 必要要件
+
+- Node.js 18.0.0 以上
+- npm 9.0.0 以上
+
+### インストール
 
 ```bash
 npm install
 ```
 
-### Development
-
-Start the development server with HMR:
+### 開発サーバーの起動
 
 ```bash
 npm run dev
 ```
 
-Your application will be available at `http://localhost:5173`.
+アプリケーションは `http://localhost:5173` で利用できます。
 
-## Building for Production
+## ビルドと本番環境
 
-Create a production build:
+本番用ビルドの作成:
 
 ```bash
 npm run build
 ```
 
-## Deployment
+## Docker 環境
 
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
+Docker を使用して環境を構築する場合:
 
 ```bash
-# For npm
-docker build -t my-app .
+# イメージのビルド
+docker build -t project-management .
 
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
+# コンテナの起動
+docker run -p 3000:3000 project-management
 ```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
 
 ---
 
-Built with ❤️ using React Router.
+Made with ❤️ by Your Team
